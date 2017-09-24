@@ -12,4 +12,13 @@ print("You entered %d" % factNum)
 
 #Calculate the factorial of number
 factorised = math.factorial(factNum)
-print("Here is a factorial of your number: %d" % factorised)
+print("Factorial of your number: %d" % factorised)
+
+#convert number into string
+factorised_string = str(factorised)
+sum = 0
+
+for i in factorised_string:
+	sum += int(i)
+	
+print("Digit sum for number is: %d" % sum)
