@@ -16,9 +16,13 @@ print("Factorial of your number: %d" % factorised)
 
 #convert number into string
 factorised_string = str(factorised)
+
+#declare sum at 0
 sum = 0
 
+#Calculate sum of digits by grabbing character from string, converting to int and adding to sum.
 for i in factorised_string:
 	sum += int(i)
 	
+#print the sum of digits	
 print("Digit sum for number is: %d" % sum)
