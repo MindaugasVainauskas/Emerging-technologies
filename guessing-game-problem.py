@@ -24,13 +24,25 @@ while(guessCorrect == 0):
 	
 	if(guess > randomNumber):
 		print("Your guess is larger than the random number!")
-		guessList.append(guess)
+		#finding if element exists is adapted from 
+		# https://stackoverflow.com/questions/7571635/fastest-way-to-check-if-a-value-exist-in-a-list
+		if guess in guessList:
+			continue
+		else:
+			guessList.append(guess)
 	elif(guess < randomNumber):
 		print("Your guess is smaller than the random number!")
-		guessList.append(guess)
+		if guess in guessList:
+			continue
+		else:
+			guessList.append(guess)
 	elif(guess == randomNumber):
 		print("Congratulations! Your guessed correctly!")
-		guessList.append(guess)
+		if guess in guessList:
+			continue
+		else:
+			guessList.append(guess)
+			
 		guessCorrect = 1
 
 #Print out the guesses from list
