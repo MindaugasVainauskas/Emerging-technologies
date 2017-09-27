@@ -1,5 +1,5 @@
 # 27/09/2017
-#Python problem sheet. Problem 7
+#Python problem sheet. Problem 8
 # Merge 2 sorted lists into a single sorted list
 
 #Declare 3 lists to be worked with
